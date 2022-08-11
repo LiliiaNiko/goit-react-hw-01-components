@@ -18,7 +18,7 @@ height: 15px;
 margin-right: ${p => p.theme.space[4]}px;
 border-radius: ${p => p.theme.radii.round};
 background-color: ${({ isOnline }) => {
-    return { isOnline } ? 'green' : 'red'}
+    return isOnline ? 'green' : 'red'}
 };
 `;
 

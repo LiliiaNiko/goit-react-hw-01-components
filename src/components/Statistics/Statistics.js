@@ -2,10 +2,6 @@ import PropTypes from 'prop-types';
 import { Box } from '../Box'
 import { StatisticSection, Title, StatisticList, ListItem, ItemSpan} from './Statistics.styled'
 
-//const Info = ({ text }) => {
-    //return <div>{text}</div>
-//}
-
 export const Statistics = ({ title = null, stats }) => {
     return (<Box
      p={4}
@@ -34,6 +30,11 @@ export const Statistics = ({ title = null, stats }) => {
 
 Statistics.propTypes = {
     title: PropTypes.string,
-    label: PropTypes.string,
-    percentage: PropTypes.number,
+    stats: PropTypes.arrayOf(
+        PropTypes.shape({
+            percentage: PropTypes.number,
+            id: PropTypes.string,
+            label:PropTypes.string,
+        })
+    )   
 }

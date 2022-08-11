@@ -9,18 +9,17 @@ border-radius: ${p => p.theme.radii.round}
 `;
 
 export const UserName = styled.p`
-margin-bottom: ${p => p.theme.space[3]}px;
+margin-bottom: ${p => p.theme.space[4]}px;
 text-align:center;
 font-size: ${p => p.theme.fontSizes.l};
 font-weight: ${p => p.theme.fontWeights.bold};
 `;
 export const UserTag = styled.p`
-margin-bottom: ${p => p.theme.space[3]}px;
+margin-bottom: ${p => p.theme.space[4]}px;
 text-align:center;
 color: ${p => p.theme.colors.primary}
 `;
 export const UserLocation = styled.p`
-margin-bottom: ${p => p.theme.space[3]}px;
 text-align:center;
 `;
 export const UserStats = styled.ul`

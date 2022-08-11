@@ -8,7 +8,8 @@ export const FriendList = ({friends}) => {
         <FriendListItem key={friend.id}
             avatar={friend.avatar}
             name={friend.name}
-            isOnline={friend.isOnline} />
+            isOnline={friend.isOnline}
+        />
       ))}
     </ListOfFriends>
         </ListContainer>)

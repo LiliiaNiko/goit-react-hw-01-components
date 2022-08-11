@@ -20,7 +20,7 @@ export const ListItem = styled.li`
 padding:${p => p.theme.space[5]}px;
 background: ${p => p.theme.colors.background};
 border: ${p => p.theme.borders.normal};
-border-color: ${p => p.theme.colors.white}
+border-color: ${p => p.theme.colors.white};
 `;
 export const ItemSpan = styled.span`
 display:block;
